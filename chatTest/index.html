@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgoraChat Group Chat JS Example</title>
+    <script src="../clients/Agora-chat_1_2_2_3.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="main" id="main">
+
+        <!-- left pane is controllers and event log-->
+        <div class="column" id="leftPane" style="background-color:whitesmoke">
+
+            <h2 class="left-align">AgoraChat Group Chat JS Only</h2>
+
+            <form id="loginForm">
+
+                <div>
+                    <label>Username</label>
+                    <input type="text" placeholder="Username" id="userID" value="alekben1">
+                </div>
+
+                <div>
+                    <label>Password</label>
+                    <input type="passward" placeholder="Password" id="password">
+                </div>
+
+                <div>
+                    <button type="button" class="button" id="login">Login</button>
+                    <button type="button" class="button" id="logout" disabled>Logout</button>
+                </div>
+
+                <div>
+                    <input type="text" placeholder="groupName" id="groupName">
+                    <input type="text" placeholder="groupID" id="groupID">
+                    <br>
+                    <button type="button" class="button" id="createGroup" disabled>CreateGroup</button>
+                    <button type="button" class="button" id="joinGroup" disabled>JoinGroup</button>
+                    <button type="button" class="button" id="leaveGroup" disabled>LeaveGroup</button>
+                    <button type="button" class="button" id="destroyGroup" disabled>DestroyGroup</button>
+                </div>
+
+                <div>
+                    <button type="button" class="button" id="getPublicGroups" disabled>GetPublicGroups</button>
+                    <button type="button" class="button" id="getJoinedGroups" disabled>GetJoinedGroups</button>
+                </div>
+
+                <div>
+                    <label>Group Chat Message</label>
+                    <input type="text" placeholder="Group Chat Message" id="groupChatMessage">
+                    <button type="button" class="button" id="sendGroupMessage" disabled>SendGroupMessage</button>
+                    <button type="button" class="button" id="getGroupMessages" disabled>GetGroupMessages</button>
+                </div>
+
+            </form>
+
+            <hr>
+
+            <div id="log" class="logWindow">
+            </div>
+
+        </div>
+
+        <!-- mid pane is group lists-->
+        <div class="column" id="groups">
+
+            <div class="publicGroupsList" id="publicGroupsList" style="background-color:lightgray">
+                <center><i>Public Groups...</span></i></center>
+            </div>
+            <br>
+            <br>
+            <div class="joinedGroupsList" id="joinedGroupsList" style="background-color:lightgrey">
+                <center><i>Joined Groups...</span></i></center>
+            </div>
+
+        </div>
+
+        <!--right pane is message view-->
+        <div class="column" id="messages">
+            
+            <div class="messageList" id="messageList">
+                <center><i>Messages View...</span></i></center>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- load scripts-->
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

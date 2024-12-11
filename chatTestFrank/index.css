@@ -1,0 +1,71 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.col {
+    min-width: 433px; 
+    max-width: 443px;
+    height: 443px;
+    background-color: rgb(114, 165, 213);
+}
+
+.card {
+    margin-top: 0px; margin-bottom: 0px;
+}
+
+.row card-content {
+    margin-bottom: 0px; margin-top: 10px;
+}
+
+.log {
+    position: relative;
+    position: absolute;
+    left: 460px;  /* Set distance from right */
+    top: 65px; /* Set distance from top */
+    width: 443px;
+    background-color: rgb(228, 228, 228);
+    height: 443px;
+    overflow: auto;
+}
+
+.messages {
+    position: absolute;
+    left: 920px;
+    top: 65px;
+    background-color: rgb(163, 163, 163);
+    height: 443px;
+    width: 450px;
+    overflow: auto;
+}
+
+.messageRow {
+    position: absolute;
+    bottom: 3px; 
+}
+
+.messageRow input {
+    width: 225px;
+}
+
+.groups {
+    max-width: 443px;
+    background-color: rgb(89, 89, 89);
+    overflow: auto;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
